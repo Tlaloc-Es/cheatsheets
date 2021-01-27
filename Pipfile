@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+simple-term-menu = "*"
+pygments = "*"
+cheatsheet = {editable = true, git = "https://github.com/Tlalocan/cheatsheet"}
+
+[dev-packages]
+pylint = "*"
+
+[requires]
+python_version = "3.8"
+
+[scripts]
+build = "python setup.py sdist bdist_wheel"
+publish = "twine upload dist/*"
