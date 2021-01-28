@@ -25,7 +25,6 @@ def list_cheats():
 
 
 def execute_cheat(cheat):
-
     with open(CHEAT_DIRECTORY+cheat) as f:
         data = json.load(f)
     
@@ -47,9 +46,12 @@ def main():
     cheats = list_cheats()
 
     if len(cheats) > 0:
-        terminal_menu = TerminalMenu(cheats, preview_command=preview_cheat, preview_size=0.75)
-        menu_entry_index = terminal_menu.show()
-        execute_cheat(cheats[menu_entry_index])
+        try:
+            terminal_menu = TerminalMenu(cheats, preview_command=preview_cheat, preview_size=0.75)
+            menu_entry_index = terminal_menu.show()
+            execute_cheat(cheats[menu_entry_index])
+        except Exception:
+            pass
     else:
         print("You don't have any cheat")
 

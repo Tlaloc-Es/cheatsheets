@@ -5,8 +5,6 @@
 *** Thanks again! Now go create something AMAZING! :D
 -->
 
-
-
 <!-- PROJECT SHIELDS -->
 <!--
 *** I'm using markdown "reference style" links for readability.
@@ -20,8 +18,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-
-
+[![Bitcoin Donation][bitcoin-shield]][bitcoin-donation]
 
 <!-- PROJECT LOGO -->
 <br />
@@ -42,8 +39,6 @@
     <a href="https://github.com/Tlalocan/cheatsheets/issues">Request Feature</a>
   </p>
 </p>
-
-
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
@@ -71,11 +66,8 @@
   </ol>
 </details>
 
-
-
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
 
 Whit this tool you could create cheatsheets of commands in order to can execute again easely.
 
@@ -85,8 +77,6 @@ Probably you needed some bash command in order to do any task, and you search ag
 
 * Python
 
-
-
 <!-- GETTING STARTED -->
 ## Getting Started
 
@@ -95,20 +85,18 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
+You need have installed python and pip v3.
+
   ```sh
-  npm install npm@latest -g
+  sudo apt install python3 python3-pip
   ```
 
 ### Installation
 
-1. You only need install using pip
-   ```sh
+
+```sh
    pip install cheatsheets
-   ```
-
-
+```
 
 <!-- USAGE EXAMPLES -->
 ## Usage
@@ -118,17 +106,7 @@ Each cheatsheets that you want to store, is a json file with the name that you w
 A cheat following the next format:
 
 > cheat.json
->```json
->{
->    "name":"List content",
->    "command":"ls <ls> <directory>",
->    "description":"List content in directory"
->}
->```
-
-If you want to put any argument in order to remplace when execute the cheatsheets, you can do it puting the name of the argument betwen `<name of arg>`
-
-> cheat.json
+>
 >```json
 >{
 >    "name":"List content",
@@ -137,13 +115,28 @@ If you want to put any argument in order to remplace when execute the cheatsheet
 >}
 >```
 
+If you want to put any argument in order to remplace when execute the cheatsheets, you can do it puting the name of the argument betwen `<name of arg>`
+
+> cheat.json
+>
+>```json
+>{
+>    "name":"List content",
+>    "command":"ls <ls> <directory>",
+>    "description":"List content in directory"
+>}
+>```
+
+after this you can list your cheatsheets with
+
+```sh
+cheatsheets
+```
 
 <!-- ROADMAP -->
 ## Roadmap
 
 See the [open issues](https://github.com/Tlalocan/cheatsheets/issues) for a list of proposed features (and known issues).
-
-
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -156,14 +149,10 @@ Contributions are what make the open source community such an amazing place to b
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-
-
 <!-- LICENSE -->
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
-
-
 
 <!-- CONTACT -->
 ## Contact
@@ -184,3 +173,5 @@ https://github.com/Tlalocan/cheatsheets
 [license-shield]: https://img.shields.io/github/license/Tlalocan/cheatsheets.svg?style=for-the-badge
 [license-url]: https://github.com/Tlalocan/cheatsheets/blob/master/LICENSE.txt
 [product-screenshot]: images/screenshot.png
+[bitcoin-shield]: https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/128px-Bitcoin.svg.png
+[bitcoin-donation]: https://www.blockchain.com/btc/address/18p1E49PaampipMXgf7rR5JypGJUHuRVSj
