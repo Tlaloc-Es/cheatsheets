@@ -42,7 +42,7 @@ def execute_cheat(cheat):
     os.system(command)
 
 
-def main():
+def cheatsheets():
     cheats = list_cheats()
 
     if len(cheats) > 0:
@@ -54,6 +54,3 @@ def main():
             pass
     else:
         print("You don't have any cheat")
-
-if __name__ == "__main__":
-    main()

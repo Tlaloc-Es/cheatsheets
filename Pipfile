@@ -7,6 +7,7 @@ name = "pypi"
 simple-term-menu = "*"
 pygments = "*"
 cheatsheet = {editable = true, git = "https://github.com/Tlalocan/cheatsheet"}
+click = "*"
 
 [dev-packages]
 pylint = "*"

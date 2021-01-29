@@ -13,7 +13,7 @@ if not os.path.exists(CHEAT_DIRECTORY):
 
 setup(
     name="cheatsheets",
-    version="0.0.3",
+    version="0.0.4",
     description="Cheatsheets",
     long_description=README,
     long_description_content_type="text/markdown",
@@ -28,10 +28,10 @@ setup(
     ],
     packages=["cheatsheets"],
     include_package_data=True,
-    install_requires=["simple-term-menu", "pygments"],
+    install_requires=["simple-term-menu", "pygments", "click"],
     entry_points={
         "console_scripts": [
-            "cheatsheets=cheatsheets.cheatsheets:main",
+            "cheatsheets=cheatsheets.__main__:main",
         ]
     },
 )
